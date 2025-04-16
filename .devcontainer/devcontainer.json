@@ -1,0 +1,18 @@
+{
+    "name": "Project3 Dev Container",
+    "workspaceMount": "type=volume,source=devcontainer-workspace,target=/workspace",
+    "workspaceFolder": "/workspace", 
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "nimlang.nimlang"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    }
+}
