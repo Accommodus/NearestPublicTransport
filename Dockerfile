@@ -1,7 +1,7 @@
 FROM nimlang/nim
 
-RUN apt-get update && apt-get install -y make
 RUN git config --global advice.detachedHead false
+RUN apt-get update && apt-get install -y make clang libclang-dev
 
 RUN nimble install -y nimlangserver
-RUN nimble install -y karax jsonrpc futhark
+RUN nimble install -y karax jsonrpc
