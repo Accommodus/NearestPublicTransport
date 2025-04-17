@@ -1,8 +1,12 @@
 {
     "name": "Project3 Dev Container",
-    "workspaceMount": "type=tmpfs,target=/workspace",
-    "workspaceFolder": "/workspace",
     "image":"boomboomcannon/near-pub-trans",
+
+    "workspaceMount": "type=tmpfs,target=/home/workspace",
+    "workspaceFolder": "/home/workspace/NearestPublicTransport",
+
+    "postCreateCommand": "git clone --branch main https://github.com/Accommodus/NearestPublicTransport.git /home/workspace",
+
     "customizations": {
         "vscode": {
             "extensions": [
