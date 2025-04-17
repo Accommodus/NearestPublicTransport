@@ -3,9 +3,9 @@
     "image":"boomboomcannon/near-pub-trans",
 
     "workspaceMount": "type=tmpfs,target=/home/workspace",
-    "workspaceFolder": "/home/workspace/NearestPublicTransport",
+    "workspaceFolder": "/home/workspace",
 
-    "postCreateCommand": "git clone --branch main https://github.com/Accommodus/NearestPublicTransport.git /home/workspace",
+    "onCreateCommand": "git clone --branch main https://github.com/Accommodus/NearestPublicTransport.git /home/workspace",
 
     "customizations": {
         "vscode": {
