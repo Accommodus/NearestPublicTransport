@@ -1,0 +1,2 @@
+/*.* # keep files with extensions
+!*/ # allow folders
