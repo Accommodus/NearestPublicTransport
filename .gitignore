@@ -1,2 +1,2 @@
-/*.* # keep files with extensions
 !*/ # allow folders
+*.js # ignore all js files
